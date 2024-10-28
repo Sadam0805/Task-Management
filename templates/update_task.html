@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body id="update_task">
+
+<section class="outer">
+    <div class="edit-container">
+        <form action="/edit/{{ task[0] }}" method="POST">
+            <h2>Edit Task</h2>
+
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" value="{{ task[1] }}" required>
+
+            <label for="description">Description:</label>
+            <input type="text" name="description" id="description" value="{{ task[2] }}" required>
+
+            <label for="due_date">Due Date:</label>
+            <input type="date" name="due_date" id="due_date" value="{{ task[3] }}" required>
+
+            <label for="status">Status:</label>
+            <input type="text" name="status" id="status" value="{{ task[4] }}" required>
+
+            <button type="submit">Update Task</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
+

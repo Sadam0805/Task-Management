@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body id="add_task">
+
+<section class="outer">
+    <div class="add-container">
+        <form action="/add" method="POST">
+            <h2>Add a New Task</h2>
+            <label for="title">Task Title:</label>
+            <input type="text" name="title" id="title" required>
+
+            <label for="description">Task Description:</label>
+            <input type="text" name="description" id="description" required>
+
+            <label for="due_date">Due Date:</label>
+            <input type="date" name="due_date" id="due_date" required>
+
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
