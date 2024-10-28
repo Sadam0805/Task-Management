@@ -1,0 +1,341 @@
+
+a {
+    text-decoration: none;
+}
+
+#heading {
+    text-align: center;
+}
+
+#sub_heading {
+    text-align: center;
+    font-family: ;
+    color: grey;
+}
+
+.outer-task {
+    border: 5px solid grey;
+}
+
+.container {
+    margin: 1%;
+    border: 3px solid black;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #f989f9;
+}
+
+.add-task {
+    text-align: center;
+    padding: 5px;
+}
+
+.add-task-button {
+    text-align: center;
+    width: 15%;
+    height: 5vh;
+    border-radius: 100px;
+}
+
+.side {
+    display: inline-block;
+    margin: 0 5% 1% 5%;
+}
+
+.buttons {
+}
+
+.add_container {
+    text-align: left;
+    border: 3px gold solid;
+    padding: 5%;
+
+}
+
+.table_btn {
+    background_color: red;
+    text_align: center;
+
+}
+
+table {
+    margin: 10px;
+}
+
+td {
+    margin: 50px;
+    background-color: green;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/* Add Task Button Style */
+.btn-at {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-at:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* Delete Button Style */
+.btn-del {
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.btn-del:active,
+.btn-del:hover,
+.btn-del:focus {
+  outline: 0;
+}
+
+
+.btn-del:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+.btn-del:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+.btn-del:active:hover,
+.btn-del:focus:hover,
+.btn-del:focus {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+
+/* Edit Button Styles */
+.btn-edit {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 10px;
+    background-color: lite blue;
+    border: none;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+.btn-edit > a {
+    color: blue;
+}
+
+/* ----------------------------------------------------------------- */
+/* Add Task page style*/
+
+#add_task {
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.add-container {
+    background: #ffffff;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.add-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.add-container input[type="text"],
+.add-container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-container input[type="text"]:focus,
+.add-container input[type="date"]:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+.add-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-container button:hover {
+    background-color: #008ecc;
+}
+
+@media (max-width: 768px) {
+    .add-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 95%;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+/* Update Task page style */
+
+#update_task {
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.edit-container {
+    background: #ffffff;
+    padding: 25px 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.edit-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.edit-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+.edit-container input[type="text"],
+.edit-container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edit-container input[type="text"]:focus,
+.edit-container input[type="date"]:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+.edit-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00aaff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-container button:hover {
+    background-color: #008ecc;
+}
+
+@media (max-width: 768px) {
+    .edit-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 95%;
+    }
+}
+
+
+
+
