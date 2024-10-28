@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T@sk Manager</title>
+    <link rel="stylesheet" href="..\static\styles.css">
+</head>
+
+<body>
+
+    <section id="outer">
+
+        <h1 id="heading">T@sk Manager</h1>
+        <h4 id="sub_heading">All T@sks Listed down here</h4>
+
+        <section class="outer-task">
+                {% for task in tasks %}
+            <div class="container">
+                <div class="content">
+                    <h3><b>Title :</b> {{ task[1] }}</h3>
+                    <h3><b>Description :</b></h3> <p>{{ task[2] }}</p>
+                    <h3 class="side"><b>Due date :</b> {{ task[3] }}</h3>
+                    <h3 class="side status"><b>Status :</b> {{ task[4] }}</h3>
+                </div>
+
+                <div class="buttons">
+                    <button class="side btn-edit btn-white btn-animation" type="button"><a href="/edit/{{ task[0] }}">Edit</a></button>
+                    <button class="side btn-del" type="submit"><a style="color:red" href="/delete/{{ task[0] }}">Delete</a></button>
+                </div>
+
+            </div>
+                {% endfor %}
+            <div class="add-task">
+                <button class="btn-at"><a href="/add_task">Add T@sk</a></button>
+            </div>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
